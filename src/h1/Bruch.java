@@ -23,6 +23,10 @@ public class Bruch {
 	
 	
 	public void shorten() {
+		if (nenner == 0) {
+		    System.out.println("Nenner darf nicht 0 sein!");
+		    return;
+		}
 		int teiler = ggT(zaehler, nenner);
 		zaehler /= teiler;
 		nenner /= teiler;
