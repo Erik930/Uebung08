@@ -9,7 +9,10 @@ public class SimpleList {
 	}
 	
 	public Node getFirst() {
-		return head.next;
+		if (head.next != null){
+            return head.next;
+        }
+        return null;
 	}
 	
 	public Node getLast() {
